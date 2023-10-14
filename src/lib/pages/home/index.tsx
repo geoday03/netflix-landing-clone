@@ -1,9 +1,7 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import { NextSeo } from 'next-seo';
 
-import CTASection from '~/lib/components/samples/CTASection';
-import SomeImage from '~/lib/components/samples/SomeImage';
-import SomeText from '~/lib/components/samples/SomeText';
+
 
 const Home = () => {
   return (
@@ -15,11 +13,13 @@ const Home = () => {
       gap={4}
       mb={8}
       w="full"
+      bg='white'
     >
       <NextSeo title="Home" />
-      <SomeText />
-      <SomeImage />
-      <CTASection />
+
+      <Text>I am a normal text</Text>
+
+      <Text fontFamily='inter'>I am Inter text</Text>
     </Flex>
   );
 };

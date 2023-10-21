@@ -24,9 +24,10 @@ const Header = () => {
       align="center"
       justify="center"
       textAlign="center"
+      p="1em"
     >
       <Box mr="auto" ml={4} color="red">
-        <Heading>Netflix</Heading>
+        <Heading fontSize="2rem">Netflix</Heading>
       </Box>
 
       <HStack>

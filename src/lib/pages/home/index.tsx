@@ -1,8 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { NextSeo } from 'next-seo';
 
-
-
 const Home = () => {
   return (
     <Flex
@@ -13,13 +11,13 @@ const Home = () => {
       gap={4}
       mb={8}
       w="full"
-      bg='white'
+      bg="white"
     >
       <NextSeo title="Home" />
 
       <Text>I am a normal text</Text>
 
-      <Text fontFamily='inter'>I am Inter text</Text>
+      <Text fontFamily="inter">I am Inter text</Text>
     </Flex>
   );
 };

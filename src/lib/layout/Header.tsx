@@ -1,3 +1,4 @@
+import { DragHandleIcon, ChevronDownIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
@@ -9,16 +10,21 @@ import {
   MenuItem,
   MenuList,
   useDisclosure,
+  useStyleConfig,
 } from '@chakra-ui/react';
-
-import ThemeToggle from './ThemeToggle';
-import { DragHandleIcon, ChevronDownIcon } from '@chakra-ui/icons';
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const netflixButtonStyle = useStyleConfig('Button', { variant: 'netflix' });
 
   return (
-    <Flex as="header" width="full" align="center">
+    <Flex
+      as="header"
+      width="full"
+      align="center"
+      justify="center"
+      textAlign="center"
+    >
       <Box mr="auto" ml={4} color="red">
         <Heading>Netflix</Heading>
       </Box>
@@ -45,7 +51,7 @@ const Header = () => {
           </Menu>
         </Box>
 
-        <Button>Sign In</Button>
+        <Button __css={netflixButtonStyle}>Sign In</Button>
       </HStack>
     </Flex>
   );

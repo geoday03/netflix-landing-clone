@@ -21,13 +21,14 @@ const Header = () => {
     <Flex
       as="header"
       width="full"
+      position="relative"
       align="center"
       justify="center"
       textAlign="center"
       p="1em"
     >
       <Box mr="auto" ml={4} color="red">
-        <Heading fontSize="2rem">Netflix</Heading>
+        <Heading fontSize="clamp(2rem, 8vw, 3rem)">Netflix</Heading>
       </Box>
 
       <HStack>

@@ -4,7 +4,7 @@ import {
   Button,
   Flex,
   HStack,
-  Heading,
+  IconButton,
   Menu,
   MenuButton,
   MenuItem,
@@ -12,6 +12,8 @@ import {
   useDisclosure,
   useStyleConfig,
 } from '@chakra-ui/react';
+
+import { NetflixIcon } from '../components/icons/NetflixIcon';
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -28,7 +30,10 @@ const Header = () => {
       p="1em"
     >
       <Box mr="auto" ml={4} color="red">
-        <Heading fontSize="clamp(2rem, 8vw, 3rem)">Netflix</Heading>
+        <IconButton
+          aria-label="Netflix Home"
+          icon={<NetflixIcon width="89px" color="red" height="24px" />}
+        />
       </Box>
 
       <HStack>

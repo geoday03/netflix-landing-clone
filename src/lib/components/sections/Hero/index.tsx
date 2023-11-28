@@ -3,7 +3,6 @@ import {
   Button,
   Flex,
   Heading,
-  Icon,
   Input,
   Stack,
   Text,
@@ -28,7 +27,7 @@ export default function Hero() {
           textAlign="center"
           bgGradient="linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%)"
         >
-          <Box mb="14em" w="full">
+          <Box mb="8em" w="full">
             <Header />
           </Box>
 
@@ -51,17 +50,17 @@ export default function Hero() {
               placeholder="Email address"
               colorScheme="blackAlpha"
               bg="blackAlpha.500"
+              w={{ base: '75vw', md: '30vw' }}
               _placeholder={{ color: 'gray.500' }}
             />
 
-            <Button variant="netflix" size="lg" px="2em">
+            <Button variant="netflix" size="lg" px="2em" mb="20vh">
               Get Started
             </Button>
           </Stack>
         </VStack>
       </Flex>
 
-      <Icon />
       <Promotion />
     </Flex>
   );

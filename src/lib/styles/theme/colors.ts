@@ -2,13 +2,13 @@ import type { DeepPartial, Theme } from '@chakra-ui/react';
 
 /** extend additional color here */
 const extendedColors = {
-  background: '#000',
-  
+  background: '#000000',
+
   text: '#FFFF',
 
   brand: {
-    primary: ''
-  }
+    primary: '',
+  },
 };
 
 /** override chakra colors here */

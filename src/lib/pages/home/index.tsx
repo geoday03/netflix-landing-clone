@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import { NextSeo } from 'next-seo';
 
+import Compatibility from '~/lib/components/sections/Compatibility';
 import Hero from '~/lib/components/sections/Hero';
 
 const Home = () => {
@@ -9,6 +10,8 @@ const Home = () => {
       <NextSeo title="Home" />
 
       <Hero />
+
+      <Compatibility />
     </Flex>
   );
 };

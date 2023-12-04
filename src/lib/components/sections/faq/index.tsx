@@ -23,7 +23,7 @@ export default function FAQ() {
           </AccordionButton>
 
           <AccordionPanel>
-            <Text mb="2em">
+            <Text mb="1em">
               Netflix is a streaming service that offers a wide variety of
               award-winning TV shows, movies, anime, documentaries, and more on
               thousands of internet-connected devices.
@@ -61,7 +61,7 @@ export default function FAQ() {
           </AccordionButton>
 
           <AccordionPanel>
-            <Text mb="2em">
+            <Text mb="1em">
               Watch anywhere, anytime. Sign in with your Netflix account to
               watch instantly on the web at netflix.com from your personal
               computer or on any internet-connected device that offers the

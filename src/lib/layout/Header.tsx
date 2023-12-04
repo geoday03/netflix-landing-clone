@@ -9,6 +9,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  useBreakpointValue,
   useDisclosure,
   useStyleConfig,
 } from '@chakra-ui/react';
@@ -22,6 +23,11 @@ const Header = () => {
 
   const [language, setLanguage] = useState('English');
 
+  const languageDisplay = useBreakpointValue({
+    base: '',
+    md: language,
+  });
+
   return (
     <Flex
       as="header"
@@ -32,15 +38,22 @@ const Header = () => {
       textAlign="center"
       p="1em"
     >
-      <Box mr="auto" ml={4} color="red">
+      <Box color="red">
         <IconButton
           variant="unstyled"
           aria-label="Netflix Home"
-          icon={<NetflixIcon width="9em" color="red" height="2em" />}
+          icon={
+            <NetflixIcon
+              width="9em"
+              color="red"
+              height="2em"
+              maxW="max-content"
+            />
+          }
         />
       </Box>
 
-      <HStack>
+      <HStack ml="auto">
         <Box className="languages-header">
           <Menu isOpen={isOpen}>
             <MenuButton
@@ -51,7 +64,7 @@ const Header = () => {
               leftIcon={<DragHandleIcon />}
               rightIcon={<ChevronDownIcon />}
             >
-              {language}
+              {languageDisplay}
             </MenuButton>
 
             <MenuList>
@@ -67,7 +80,14 @@ const Header = () => {
           </Menu>
         </Box>
 
-        <Button __css={netflixButtonStyle}>Sign In</Button>
+        <Button
+          __css={netflixButtonStyle}
+          fontSize={{ base: '0.8rem', md: '1rem' }}
+          size={{ base: 'sm', md: 'lg' }}
+          whiteSpace="nowrap"
+        >
+          Sign In
+        </Button>
       </HStack>
     </Flex>
   );

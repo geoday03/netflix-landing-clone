@@ -2,11 +2,13 @@ import { Box, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react';
 
 export default function Compatibility() {
   return (
-    <VStack mx="5vw" w="full" h="full">
-      <Heading>Enjoy on your TV</Heading>
+    <VStack>
+      <Heading fontSize="2rem" mb="1em">
+        Enjoy on your TV
+      </Heading>
 
-      <Box textAlign="center">
-        <Text fontSize="1.125rem">
+      <Box textAlign="center" px="2em">
+        <Text fontSize="1.3rem">
           Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
           players, and more.
         </Text>

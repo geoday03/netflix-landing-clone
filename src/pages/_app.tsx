@@ -8,8 +8,6 @@ import { Chakra } from '~/lib/components/Chakra';
 import Layout from '~/lib/layout';
 import '~/lib/styles/globals.css';
 
-import { inter } from '~/lib/styles/theme/fonts';
-
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Chakra>

@@ -6,28 +6,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:turbo": "npx turbo build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && pnpm format",
-    "lint:turbo": "npx turbo lint",
+    "lint:fix": "eslint src --fix && npm format",
     "type-check": "tsc --noEmit",
-    "type-check:turbo": "npx turbo type-check",
     "test:e2e": "playwright test",
     "format": "prettier --write src",
-    "up-interactive": "pnpm up -i",
-    "up-latest": "pnpm up-interactive -L",
-    "release": "cross-env HUSKY=0 standard-version",
-    "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install"
+    "up-interactive": "npm up -i",
+    "up-latest": "npm up-interactive -L",
+    "release": "cross-env standard-version",
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "next/font": "^13.5.4",
+    "@next/font": "^13.5.4",
     "framer-motion": "^10.10.0",
     "next": "^13.2.3",
     "next-pwa": "^5.6.0",
@@ -52,12 +48,9 @@
     "next-sitemap": "^4.0.6",
     "prettier": "^2.8.4",
     "standard-version": "^9.5.0",
-    "turbo": "^1.8.8",
     "typescript": "^4.9.5"
   },
   "engines": {
-    "node": ">=16.x.x",
-    "pnpm": ">=8"
-  },
-  "packageManager": "pnpm@8.1.0"
+    "node": ">=16.x.x"
+  }
 }

@@ -31,8 +31,8 @@ export default function FAQ() {
 
             <Text>
               You can watch as much as you want, whenever you want – all for one
-              low monthly price. There's always something new to discover and
-              new TV shows and movies are added every week!
+              low monthly price and without an internet connection. Take Netflix
+              with you new TV shows and movies are added every week!
             </Text>
           </AccordionPanel>
         </AccordionItem>
@@ -71,8 +71,8 @@ export default function FAQ() {
 
             <Text>
               You can also download your favorite shows with the iOS, Android,
-              or Windows 10 app. Use downloads to watch while you're on the go
-              and without an internet connection. Take Netflix with you
+              or Windows 10 app. Use downloads to watch while you&apos;re on the
+              go and without an internet connection. Take Netflix with you
               anywhere.
             </Text>
           </AccordionPanel>

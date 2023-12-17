@@ -11,7 +11,6 @@ import {
   MenuList,
   useBreakpointValue,
   useDisclosure,
-  useStyleConfig,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 
@@ -19,13 +18,14 @@ import { NetflixIcon } from '../components/icons/NetflixIcon';
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const netflixButtonStyle = useStyleConfig('Button', { variant: 'netflix' });
 
   const [language, setLanguage] = useState('English');
 
   const languageDisplay = useBreakpointValue({
     base: '',
+    sm: language,
     md: language,
+    lg: language,
   });
 
   return (
@@ -44,9 +44,9 @@ const Header = () => {
           aria-label="Netflix Home"
           icon={
             <NetflixIcon
-              width="9em"
+              width={{ base: '8em', md: '9em' }}
               color="red"
-              height="2em"
+              height={{ base: '1.6em', md: '2em' }}
               maxW="max-content"
             />
           }
@@ -63,6 +63,8 @@ const Header = () => {
               variant="outline"
               leftIcon={<DragHandleIcon />}
               rightIcon={<ChevronDownIcon />}
+              size="sm"
+              borderColor="gray.500"
             >
               {languageDisplay}
             </MenuButton>
@@ -81,10 +83,9 @@ const Header = () => {
         </Box>
 
         <Button
-          __css={netflixButtonStyle}
+          variant="netflix"
           fontSize={{ base: '0.8rem', md: '1rem' }}
-          size={{ base: 'sm', md: 'lg' }}
-          whiteSpace="nowrap"
+          size="sm"
         >
           Sign In
         </Button>

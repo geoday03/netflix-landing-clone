@@ -9,7 +9,7 @@ export const Button: ComponentStyleConfig = {
       bg: '#E50914',
       color: 'white',
       _hover: {
-        bg: '#E50914',
+        bg: '#ba0710',
       },
       rounded: 6,
     },

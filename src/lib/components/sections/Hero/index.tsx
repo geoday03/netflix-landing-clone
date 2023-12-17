@@ -28,7 +28,7 @@ export default function Hero() {
             <Header />
           </Box>
 
-          <VStack px="2em" textAlign="center" pt={{ base: '7em', md: '13em' }}>
+          <VStack px="2em" textAlign="center" pt={{ base: '2em', sm: '6em' }}>
             <Heading fontSize={{ base: '2rem', md: '4rem' }} mb="1em">
               Unlimited movies, TV shows, and more
             </Heading>
@@ -42,7 +42,14 @@ export default function Hero() {
               membership.
             </Text>
 
-            <Stack flexDirection={{ base: 'column', md: 'row' }} gap={4}>
+            <Stack
+              flexDirection={{ base: 'column', sm: 'row', md: 'row' }}
+              gap={4}
+              w="full"
+              justify="center"
+              align="center"
+              mb={{ base: '2em', md: '20vh' }}
+            >
               <Input
                 variant="outline"
                 type="email"
@@ -50,11 +57,12 @@ export default function Hero() {
                 placeholder="Email address"
                 colorScheme="blackAlpha"
                 bg="blackAlpha.700"
-                w={{ base: '75vw', md: '30vw' }}
+                w={{ base: '75vw', md: '65vw' }}
+                maxW="400px"
                 _placeholder={{ color: 'gray.500' }}
               />
 
-              <Button variant="netflix" size="lg" px="2em" mb="20vh">
+              <Button variant="netflix" size="lg" px="2em" maxW="max-content">
                 Get Started
               </Button>
             </Stack>

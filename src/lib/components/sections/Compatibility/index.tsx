@@ -2,7 +2,7 @@ import { Box, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react';
 
 export default function Compatibility() {
   return (
-    <VStack>
+    <VStack spacing={8} w="full" h="full" align="center" justify="center">
       <Heading fontSize="2rem" mb="1em">
         Enjoy on your TV
       </Heading>
@@ -20,8 +20,8 @@ export default function Compatibility() {
           src="/tv.png"
           alt="TV"
           pos="relative"
-          bgColor="rgba(0,0,0,0)"
           zIndex={90}
+          bg="rgba(0,0,0,0)"
         />
 
         <Box position="absolute" m="auto" mt={{ base: '5vh', md: '99px' }}>

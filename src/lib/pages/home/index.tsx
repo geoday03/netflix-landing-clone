@@ -1,6 +1,7 @@
-import { Flex, VStack } from '@chakra-ui/react';
+import { Flex, StackDivider, VStack } from '@chakra-ui/react';
 import { NextSeo } from 'next-seo';
 
+import Availability from '~/lib/components/sections/Availability';
 import Compatibility from '~/lib/components/sections/Compatibility';
 import FAQ from '~/lib/components/sections/faq';
 import Hero from '~/lib/components/sections/Hero';
@@ -19,8 +20,17 @@ const Home = () => {
 
       <Hero />
 
-      <VStack spacing={8} w="full" h="full" align="center" justify="center">
+      <VStack
+        spacing={8}
+        w="full"
+        h="full"
+        align="center"
+        justify="center"
+        divider={<StackDivider borderColor="blackAlpha" borderWidth="7px" />}
+      >
         <Compatibility />
+
+        <Availability />
       </VStack>
 
       <FAQ />

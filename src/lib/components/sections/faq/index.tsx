@@ -77,6 +77,61 @@ export default function FAQ() {
             </Text>
           </AccordionPanel>
         </AccordionItem>
+
+        <AccordionItem>
+          <AccordionButton as={Button} py="2em" rounded="0">
+            <Text fontSize="1.2rem" fontWeight={400} mr="auto">
+              How do I cancel?
+            </Text>
+          </AccordionButton>
+
+          <AccordionPanel>
+            <Text>
+              Netflix is flexible. There are no pesky contracts and no
+              commitments. You can easily cancel your account online in two
+              clicks. There are no cancellation fees – start or stop your
+              account anytime.
+            </Text>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionButton as={Button} py="2em" rounded="0">
+            <Text fontSize="1.2rem" fontWeight={400} mr="auto">
+              What can I watch on Netflix?
+            </Text>
+          </AccordionButton>
+
+          <AccordionPanel>
+            <Text>
+              Netflix has an extensive library of feature films,
+              documentaries,TV shows, anime, award-winning Netflix originals,
+              and more. Watch as much as you want, anytime you want.
+            </Text>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionButton as={Button} py="2em" rounded="0">
+            <Text fontSize="1.2rem" fontWeight={400} mr="auto">
+              Is Netflix good for kids?
+            </Text>
+          </AccordionButton>
+
+          <AccordionPanel>
+            <Text mb="1em">
+              The Netflix kids experience is includedi n your membership to give
+              parents control while kids enjoy family-friendly TV shows and
+              movies in their own space.
+            </Text>
+
+            <Text>
+              Kids profiles come with PIN-protected parental controls that let
+              you restrict the maturrity rating of the content kids can watchq
+              and block specific titles you don&#39;t want kids to see.
+            </Text>
+          </AccordionPanel>
+        </AccordionItem>
       </Accordion>
     </VStack>
   );
